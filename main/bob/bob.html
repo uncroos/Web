@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Bob</title>
+    <link rel="stylesheet" href="bob.css">
+    <link rel="SHORTCUT ICON" href="../naga.ico">
+    <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script> <!-- Font Awesome 아이콘을 사용하기 위한 링크 -->
+</head>
+<body>
+    <div class="gray-bar">
+        <h2>Project Roblog</h2>
+        <br/>
+        <h3>안요한</h3>   
+    </div>
+
+
+
+    <div class="meals-container">
+        <!-- 아침 정보 섹션 -->
+        <div id="breakfast-info" class="meal-info1">
+            <h1>아침 정보</h1>
+            <input type="date" id="breakfastDate" name="mealDate">
+            <button onclick="getBreakfastInfo()">아침 정보 가져오기</button>
+            <p id="breakfast-content">여기에 아침 급식 정보가 표시됩니다.</p>
+        </div>
+
+        <!-- 점심 정보 섹션 -->
+        <div id="lunch-info" class="meal-info2">
+            <h1>점심 정보</h1>
+            <input type="date" id="lunchDate" name="mealDate">
+            <button onclick="getLunchInfo()">점심 정보 가져오기</button>
+            <p id="lunch-content">여기에 점심 급식 정보가 표시됩니다.</p>
+        </div>
+
+        <!-- 저녁 정보 섹션 -->
+        <div id="dinner-info" class="meal-info3">
+            <h1>저녁 정보</h1>
+            <input type="date" id="dinnerDate" name="mealDate">
+            <button onclick="getDinnerInfo()">저녁 정보 가져오기</button>
+            <p id="dinner-content">여기에 저녁 급식 정보가 표시됩니다.</p>
+        </div>
+    </div>
+
+
+
+    <div class="time-container">
+        <div class="time-info">
+            <div class="input-row">
+                <h1>시간표 정보</h1>
+                <br/>
+                <label for="dateInputId"></label>
+                <input type="date" id="dateInputId" name="date">
+                <br/>
+                <select id="gradeInputId" name="grade">
+                    <option value="">학년 선택</option>                    
+                    <option value="1">1학년</option>
+                    <option value="2">2학년</option>
+                    <option value="3">3학년</option>
+                </select>
+                <select id="classInputId" name="class">
+                    <option value="">반 선택</option>                    
+                    <option value="1">1반</option>
+                    <option value="2">2반</option>
+                    <option value="3">3반</option>
+                    <option value="4">4반</option>
+                    <option value="5">5반</option>
+                    <option value="6">6반</option>
+                    <option value="7">7반</option>
+                    <option value="8">8반</option>
+                </select>
+            </div>
+            <br/>
+            <button onclick="getTimeInfo()">시간표 정보 가져오기</button>
+            <p id="ti-content">여기에 시간표가 표시됩니다.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 안요한. 모든 권리를 보유.<p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

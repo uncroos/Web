@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: 100;
+    font-style: 500;
+}
+
+body {
+    font-family: 'TAEBAEKmilkyway', sans-serif;
+    font-weight: 1000;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px; /* footer 높이만큼 body의 하단에 padding 추가 */
+}
+
+header, section, footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+}
+
+h1, h2, h3 {
+    color: #212529;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+p, button, input[type="date"] { /* button과 input[type="date"]에 대한 스타일을 p 태그와 함께 적용 */
+    line-height: 1.5;
+}
+
+footer {
+    display: flex; /* 이 부분을 수정 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    /* 기존 스타일 유지 */
+    background-color: #f8f9fa;
+    text-align: center;
+    border-top: 2px solid #e9ecef;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 20px; /* 각 section 사이의 공간 추가 */
+}
+
+@media (max-width: 768px) {
+    body, header, section, footer {
+        padding: 10px;
+    }
+    footer {
+        width: calc(100% - 20px); /* 모바일 화면에서 footer 너비 조정 */
+    }
+}
+
+header .main-title p {
+    margin-top: 5px; /* 위쪽 마진을 줄임 */
+    margin-bottom: 5px; /* 아래쪽 마진을 줄임 */
+}
+
+/*회색바*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .gray-bar {
+    background-color: #ccc;
+    padding: 10px 20px; /* Adjust padding as needed */
+    height: 100px; /* 세로 길이 조정 */
+  }
+  
+  /* Making the gray bar responsive */
+  @media (max-width: 768px) {
+    .gray-bar {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+
+.menu-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px; /* 내용물과의 간격 */
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 30px; /* 텍스트 크기 조정 */
+    width: 20px; /* 가로 크기 설정 */
+    height: 20px; /* 세로 높이 설정 */
+}
+
+.menu-content {
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 60px;
+    background-color: white;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.menu-content a {
+    display: block;
+    color: black;
+    padding: 8px 12px; /* 내부 여백을 줄여 항목의 크기를 감소 */
+    text-decoration: none;
+    font-size: 14px; /* 글자 크기를 줄임 */
+    min-width: 180px; /* 최소 가로 크기를 조정, 필요에 따라 조정 가능 */
+}
+
+.menu-content a:hover {
+    background-color: #f0f0f0;
+}
+
+/* 날짜 입력 필드와 버튼 스타일링 */
+input[type="date"], button {
+    padding: 10px;
+    margin: 5px 0; /* 상하 여백 추가 */
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.meal-info1, .meal-info2, .meal-info3, .time-info {
+    width: 250px;
+    height: auto; /* 내용에 따라 높이 조정 */
+    background-color: rgb(246, 243, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 5px rgb(221, 217, 217);
+    padding: 20px; /* 내부 여백 추가 */
+    margin-bottom: 20px; /* 하단 여백 추가 */
+}
+
+.meals-container, .time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 이 항목들을 수직 중앙에 정렬하려면 추가 */
+    flex-wrap: wrap; /* 화면 크기에 따라 아이템들이 다음 줄로 넘어갈 수 있도록 설정 */
+}
+
+.meal-info1, .meal-info2, .meal-info3, .time-info {
+    /* 기존 스타일 유지 */
+    margin: 10px; /* 각 요소 사이의 간격 */
+}
+
+.meals-container, .time-container {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 400px; /* 부모 요소의 높이를 화면의 높이로 설정하여 상하 중앙 정렬 */
+}
+
+
+/* 모바일 화면에서는 세로로 정렬되도록 설정 */
+@media (max-width: 768px) {
+    .meals-container, .time-container {
+        flex-direction: column;
+    }
+}
+

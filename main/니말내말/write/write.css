@@ -1,0 +1,113 @@
+/* 기본 설정 */
+body {
+    margin: 0; /* 기본 마진 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+    background-color: #354649; /* 배경색 설정 */
+    display: flex; /* Flexbox 레이아웃 사용 */
+    justify-content: center; /* 가로축에서 중앙 정렬 */
+    align-items: center; /* 세로축에서 중앙 정렬 */
+    height: 100vh; /* 뷰포트 높이를 전체 크기로 설정 */
+}
+
+/* 헤더 스타일 */
+header {
+    width: 100%; /* 너비를 화면 전체로 설정 */
+    position: fixed; /* 화면 상단에 고정 */
+    top: 0; /* 상단에서 시작 */
+    left: 0; /* 왼쪽에서 시작 */
+    text-align: center; /* 내용을 중앙으로 정렬 */
+    background-color: transparent; /* 배경색을 투명하게 설정 */
+}
+
+/* 메인 타이틀 스타일 */
+.main-title {
+    margin: 0; /* 기본 마진 제거 */
+    padding: 20px 0; /* 상하 패딩 설정 */
+    color: #E0E7E9; /* 글자색 설정 */
+}
+
+/* 바깥쪽 박스 스타일 */
+.outer-box {
+    display: flex;
+    flex-direction: column; /* 자식 요소들을 세로로 정렬 */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #6C7A89;
+    width: 50%;
+    height: 60vh;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.inner-box {
+    background-color: #E0E7E9;
+    width: calc(100% - 60px);
+    height: calc(100% - 90px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inner-box textarea {
+    width: 100%; /* inner-box 너비에 맞춤 */
+    height: 100%; /* inner-box 높이에 맞춤 */
+    border: none; /* 테두리 제거 */
+    margin: 0; /* 외부 여백 제거 */
+    padding: 0; /* 내부 여백 제거 */
+    box-sizing: border-box; /* 패딩과 테두리 포함하여 크기 계산 */
+    resize: none; /* 사용자가 크기 조절하는 것을 방지 */
+    background-color: transparent; /* 배경색 투명 */
+}
+
+
+/* textarea에 포커스될 때 스타일 */
+.inner-box textarea:focus {
+    outline: none; /* 포커스 시 발생하는 기본 아웃라인 제거 */
+}
+
+
+.title-namebox {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px); /* outer-box의 패딩을 고려하여 폭 조정 */
+    margin-bottom: 20px; /* .inner-box와의 간격 */
+    padding: 0 20px; /* inner-box와 동일한 내부 여백을 주어 폭을 맞춤 */
+    height: 50px; /* 세로 길이 설정 */
+}
+
+.title-namebox input[type="text"] {
+    flex: 1; /* 사용 가능한 공간을 균등하게 차지 */
+    margin: 0 10px; /* 입력 필드 사이의 간격 */
+}
+
+
+
+.post-button {
+    position: absolute; /* 절대 위치 설정 */
+    bottom: 10px; /* 아래쪽에서 10px 위치 */
+    right: 10px; /* 오른쪽에서 10px 위치 */
+    background-color: #A3C6C4; /* 버튼 배경색 */
+    color: white; /* 글자색 */
+    border: none; /* 테두리 없음 */
+    padding: 10px 15px; /* 내부 여백 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    display: inline-block; /* 인라인 블록 디스플레이 */
+    font-size: 15px; /* 글자 크기 */
+    margin: 4px 2px; /* 마진 */
+    cursor: pointer; /* 커서 포인터 */
+    border-radius: 5px; /* 모서리 둥글게 */
+}
+
+
+
+/* 하이퍼링크 흔적 지우기 */
+.main-title a, .main-title a:visited {
+    color: #E0E7E9; /* 기존 코드 유지 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+}

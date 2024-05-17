@@ -1,0 +1,54 @@
+/* 기본 설정 */
+body {
+    margin: 0; /* 기본 마진 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+    background-color: #354649; /* 배경색 설정 */
+    display: flex; /* Flexbox 레이아웃 사용 */
+    justify-content: center; /* 가로축에서 중앙 정렬 */
+    align-items: center; /* 세로축에서 중앙 정렬 */
+    height: 100vh; /* 뷰포트 높이를 전체 크기로 설정 */
+}
+
+/* 페이지 왼쪽에 고정된 줄 */
+body::before {
+    content: ""; /* 가상 요소의 내용은 비워둠 */
+    position: fixed; /* 위치를 고정시킴 */
+    left: 0; /* 왼쪽에서 시작 */
+    top: 0; /* 상단에서 시작 */
+    width: 20%; /* 전체 페이지 너비의 20% */
+    height: 100%; /* 전체 페이지 높이 */
+    background-color: #D9D9D9; /* 줄의 배경색 설정 */
+}
+
+/* 헤더 스타일 */
+header {
+    width: 80%; /* 화면 너비의 80%만 사용 */
+    margin-left: 20%; /* 왼쪽 고정된 줄 너비만큼 여백 추가 */
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    height: 100%; /* 높이를 부모의 100%로 설정 */
+}
+
+/* 메인 타이틀 스타일 */
+.main-title {
+    margin: 0; /* 기본 마진 제거 */
+    padding: 20px 0; /* 상하 패딩 설정 */
+    color: #E0E7E9; /* 글자색 설정 */
+    font-size: 100px; /* 글씨 크기 키우기 */
+    display: flex; /* Flexbox 레이아웃 사용 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬을 위해 추가 */
+    height: 90vh; /* 부모 요소의 높이에 맞추기 */
+}
+
+/* 하이퍼링크 흔적 지우기 */
+.main-title a, .main-title a:visited {
+    color: #E0E7E9; /* 기존 코드 유지 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+/* 타이틀을 위로 살짝 이동 */
+.main-title {
+    margin-top: -20px; /* 추가된 코드 */
+}

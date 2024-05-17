@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: 100; /* 변경된 폰트 굵기 */
+    font-style: 500;
+}
+
+a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 링크 색상을 부모 요소의 색상으로 상속 */
+}
+
+
+body {
+    font-family: 'TAEBAEKmilkyway', sans-serif;
+    font-weight: 1000;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px; /* footer 높이만큼 body의 하단에 padding 추가 */
+}
+
+header, section, footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+}
+
+h1, h2, h3 {
+    color: #212529;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+p {
+    line-height: 1.5;
+  }
+  footer {
+    display: flex; /* 이 부분을 수정 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    /* 기존 스타일 유지 */
+    background-color: #f8f9fa;
+    text-align: center;
+    border-top: 2px solid #e9ecef;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+}
+
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* section의 내용이 잘리지 않도록 추가적인 스타일링 */
+section {
+    margin-bottom: 20px; /* 각 section 사이의 공간 추가 */
+}
+
+/* 화면의 크기에 따라 내용을 잘 조절할 수 있도록 반응형 디자인 고려 */
+@media (max-width: 768px) {
+    body, header, section, footer {
+        padding: 10px;
+    }
+    footer {
+        width: calc(100% - 20px); /* 모바일 화면에서 footer 너비 조정 */
+    }
+}
+
+header .main-title p {
+    margin-top: 5px; /* 위쪽 마진을 줄임 */
+    margin-bottom: 5px; /* 아래쪽 마진을 줄임 */
+}
+
+#projects ul {
+    list-style-type: none;
+}
+
+.menu-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px; /* 내용물과의 간격 */
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 30px; /* 텍스트 크기 조정 */
+    width: 20px; /* 가로 크기 설정 */
+    height: 20px; /* 세로 높이 설정 */
+}
+
+
+.menu-content {
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 60px;
+    background-color: white;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.menu-content a {
+    display: block;
+    color: black;
+    padding: 8px 12px; /* 내부 여백을 줄여 항목의 크기를 감소 */
+    text-decoration: none;
+    font-size: 14px; /* 글자 크기를 줄임 */
+    min-width: 180px; /* 최소 가로 크기를 조정, 필요에 따라 조정 가능 */
+}
+
+
+.menu-content a:hover {
+    background-color: #f0f0f0;
+}
