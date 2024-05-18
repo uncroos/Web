@@ -5,51 +5,65 @@
     font-style: 500;
 }
 
+/* 링크 스타일 설정 */
 a {
     text-decoration: none; /* 밑줄 제거 */
     color: inherit; /* 링크 색상을 부모 요소의 색상으로 상속 */
 }
 
-
+/* 기본 바디 스타일 */
 body {
     font-family: 'TAEBAEKmilkyway', sans-serif;
     font-weight: 1000;
-    color: #333;
-    background-color: #fff;
+    color: #ffffff; /* 글자 색상을 하얀색으로 변경 */
+    background-color: #252525;
     margin: 0;
     padding: 0;
     padding-bottom: 60px; /* footer 높이만큼 body의 하단에 padding 추가 */
+    text-align: center; /* 모든 텍스트 중앙 정렬 */
 }
 
+/* 섹션 스타일 설정 */
 header, section, footer {
     padding: 20px;
+    text-align: center; /* 섹션 내 텍스트 중앙 정렬 */
 }
 
+/* 헤더 스타일 설정 */
 header {
-    background-color: #f8f9fa;
+    background-color: #646464;
     border-bottom: 2px solid #e9ecef;
 }
 
+/* 제목 스타일 설정 */
 h1, h2, h3 {
-    color: #212529;
+    color: #ffffff; /* 글자 색상을 하얀색으로 변경 */
 }
 
+/* 리스트 스타일 설정 */
 ul {
     list-style: none;
     padding: 0;
 }
+
+/* 리스트 아이템 스타일 설정 */
 li {
     margin-bottom: 10px;
+    color: #ffffff; /* 글자 색상을 하얀색으로 변경 */
 }
+
+/* 본문 텍스트 스타일 설정 */
 p {
     line-height: 1.5;
-  }
-  footer {
-    display: flex; /* 이 부분을 수정 */
+    color: #ffffff; /* 글자 색상을 하얀색으로 변경 */
+}
+
+/* 푸터 스타일 설정 */
+footer {
+    display: flex; /* 플렉스 박스 레이아웃 사용 */
     justify-content: center; /* 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
-    /* 기존 스타일 유지 */
-    background-color: #f8f9fa;
+    background-color: #646464;
     text-align: center;
     border-top: 2px solid #e9ecef;
     padding: 5px 10px;
@@ -59,23 +73,24 @@ p {
     box-sizing: border-box;
 }
 
-
+/* 푸터 링크 스타일 설정 */
 footer a {
-    color: #333;
+    color: #ffffff; /* 글자 색상을 하얀색으로 변경 */
     text-decoration: none;
     padding: 0 10px;
 }
 
+/* 푸터 링크 호버 스타일 설정 */
 footer a:hover {
     text-decoration: underline;
 }
 
-/* section의 내용이 잘리지 않도록 추가적인 스타일링 */
+/* 섹션 사이 간격 추가 */
 section {
-    margin-bottom: 20px; /* 각 section 사이의 공간 추가 */
+    margin-bottom: 20px;
 }
 
-/* 화면의 크기에 따라 내용을 잘 조절할 수 있도록 반응형 디자인 고려 */
+/* 반응형 디자인 설정 */
 @media (max-width: 768px) {
     body, header, section, footer {
         padding: 10px;
@@ -85,11 +100,15 @@ section {
     }
 }
 
+/* 헤더 제목의 마진 조정 */
 header .main-title p {
     margin-top: 5px; /* 위쪽 마진을 줄임 */
     margin-bottom: 5px; /* 아래쪽 마진을 줄임 */
 }
 
+/* 프로젝트 리스트 스타일 설정 */
 #projects ul {
     list-style-type: none;
+    padding: 0;
+    text-align: center; /* 리스트 항목 중앙 정렬 */
 }

@@ -5,95 +5,111 @@
     font-style: 500;
 }
 
+/* 링크 스타일 설정 */
 a {
     text-decoration: none; /* 밑줄 제거 */
     color: inherit; /* 링크 색상을 부모 요소의 색상으로 상속 */
 }
 
-
+/* 기본 바디 스타일 */
 body {
     font-family: 'TAEBAEKmilkyway', sans-serif;
     font-weight: 1000;
-    color: #333;
-    background-color: #fff;
+    color: #ffffff; /* 글자 색상을 하얀색으로 변경 */
+    background-color: #252525;
     margin: 0;
     padding: 0;
     padding-bottom: 60px; /* footer 높이만큼 body의 하단에 padding 추가 */
+    text-align: center; /* 텍스트 중앙 정렬 */
 }
 
+/* 섹션 스타일 설정 */
 header, section, footer {
     padding: 20px;
 }
 
+/* 헤더 스타일 설정 */
 header {
-    background-color: #f8f9fa;
+    background-color: #646464;
     border-bottom: 2px solid #e9ecef;
 }
 
+/* 제목 스타일 설정 */
 h1, h2, h3 {
-    color: #212529;
+    color: #ffffff; /* 글자 색상을 하얀색으로 변경 */
 }
 
+/* 리스트 스타일 설정 */
 ul {
     list-style: none;
     padding: 0;
 }
+
+/* 리스트 아이템 스타일 설정 */
 li {
     margin-bottom: 10px;
 }
+
+/* 본문 텍스트 스타일 설정 */
 p {
     line-height: 1.5;
-  }
-  footer {
-    display: flex; /* 이 부분을 수정 */
+    color: #ffffff; /* 글자 색상을 하얀색으로 변경 */
+}
+
+/* 푸터 스타일 설정 */
+footer {
+    display: flex; /* 플렉스 박스 레이아웃 사용 */
     justify-content: center; /* 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
-    /* 기존 스타일 유지 */
-    background-color: #f8f9fa;
+    background-color: #646464;
     text-align: center;
     border-top: 2px solid #e9ecef;
     padding: 5px 10px;
     position: fixed;
     bottom: 0;
-    width: calc(100% - 40px);
+    width: 100%;
     box-sizing: border-box;
 }
 
-
+/* 푸터 링크 스타일 설정 */
 footer a {
-    color: #333;
+    color: #ffffff; /* 글자 색상을 하얀색으로 변경 */
     text-decoration: none;
     padding: 0 10px;
 }
 
+/* 푸터 링크 호버 스타일 설정 */
 footer a:hover {
     text-decoration: underline;
 }
 
-/* section의 내용이 잘리지 않도록 추가적인 스타일링 */
+/* 섹션 사이 간격 추가 */
 section {
-    margin-bottom: 20px; /* 각 section 사이의 공간 추가 */
+    margin-bottom: 20px;
 }
 
-/* 화면의 크기에 따라 내용을 잘 조절할 수 있도록 반응형 디자인 고려 */
+/* 반응형 디자인 설정 */
 @media (max-width: 768px) {
     body, header, section, footer {
         padding: 10px;
     }
     footer {
-        width: calc(100% - 20px); /* 모바일 화면에서 footer 너비 조정 */
+        width: 100%; /* 모바일 화면에서 footer 너비 조정 */
     }
 }
 
+/* 헤더 제목의 마진 조정 */
 header .main-title p {
     margin-top: 5px; /* 위쪽 마진을 줄임 */
     margin-bottom: 5px; /* 아래쪽 마진을 줄임 */
 }
 
+/* 프로젝트 리스트 스타일 설정 */
 #projects ul {
     list-style-type: none;
 }
 
+/* 메뉴 바 스타일 설정 */
 .menu-bar {
     position: fixed;
     top: 0;
@@ -106,7 +122,7 @@ header .main-title p {
     height: 20px; /* 세로 높이 설정 */
 }
 
-
+/* 메뉴 콘텐츠 스타일 설정 */
 .menu-content {
     display: none;
     position: fixed;
@@ -115,9 +131,10 @@ header .main-title p {
     background-color: white;
     border: solid 1px #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 
+/* 메뉴 콘텐츠 링크 스타일 설정 */
 .menu-content a {
     display: block;
     color: black;
@@ -127,7 +144,12 @@ header .main-title p {
     min-width: 180px; /* 최소 가로 크기를 조정, 필요에 따라 조정 가능 */
 }
 
-
+/* 메뉴 콘텐츠 링크 호버 스타일 설정 */
 .menu-content a:hover {
     background-color: #f0f0f0;
+}
+
+/* 본문 텍스트 및 기타 요소의 색상 변경 */
+p, span, a, li, div {
+    color: #ffffff; /* 글자 색상을 하얀색으로 변경 */
 }
